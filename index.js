@@ -1,10 +1,10 @@
 /**
- * Base By Dika Ardnt.
- * Recode By GuaAbuzz
+ * Base By Dika
+ * Recode By andymrlit
  * Kalau Mau Recode, Edit Aja Di confiq.js
  * Mumpung Lagi Baik Ini Gua Share No Enc Buat Kalian
- * Contact Me On wa.me/6289636827082
- * Follow https://github.com/Abuzzpoet
+ * Contact Me On wa.me/50941411147
+ * Follow https://github.com/Andymrlit
  */
 
 require('./config')
@@ -118,32 +118,32 @@ async function startakame() {
 			if (res.announce == true) {
 				await sleep(2000)
 				akame.sendMessage(res.id, {
-					text: `「 Group Settings Change 」\n\nGroup telah ditutup oleh admin, Sekarang hanya admin yang dapat mengirim pesan !`,
+					text: `「 Group Settings Change 」\n\nGroup a été fermé par l'administrateur, maintenant seul l'administrateur peut envoyer des messages !`,
 				});
 			} else if (res.announce == false) {
 				await sleep(2000)
 				akame.sendMessage(res.id, {
-					text: `「 Group Settings Change 」\n\nGroup telah dibuka oleh admin, Sekarang peserta dapat mengirim pesan !`,
+					text: `「 Group Settings Change 」\n\n Le groupe a été ouvert par l'administrateur, maintenant les participants peuvent envoyer des messages !`,
 				});
 			} else if (res.restrict == true) {
 				await sleep(2000)
 				akame.sendMessage(res.id, {
-					text: `「 Group Settings Change 」\n\nInfo group telah dibatasi, Sekarang hanya admin yang dapat mengedit info group !`,
+					text: `「 Modification des paramètres du groupe \n\nLes informations sur le groupe ont été restreintes, désormais seul l'administrateur peut modifier les informations sur le groupe !`,
 				});
 			} else if (res.restrict == false) {
 				await sleep(2000)
 				akame.sendMessage(res.id, {
-					text: `「 Group Settings Change 」\n\nInfo group telah dibuka, Sekarang peserta dapat mengedit info group !`,
+					text: `「 Modification des paramètres du groupe \n\nLes informations sur le groupe ont été ouvertes, les participants peuvent désormais modifier les informations sur le groupe !`,
 				});
 			} else if(!res.desc == ''){
 				await sleep(2000)
 				akame.sendMessage(res.id, {
-					text: `「 Group Settings Change 」\n\n*Group desk telah diganti menjadi*\n\n${res.desc}`,
+					text: `「 Modification des paramètres de groupe \n\n*Le bureau de groupe a été remplacé par*\n\n${res.desc}`,
 				});
       } else {
 				await sleep(2000)
 				akame.sendMessage(res.id, {
-					text: `「 Group Settings Change 」\n\n*Group Subject telah diganti menjadi*\n\n*${res.subject}*`,
+					text: `「 Group Settings Change 」\n\n*Le sujet du groupe a été remplacé par *\n\n*${res.subject}*`,
 				});
 			} 
 			
