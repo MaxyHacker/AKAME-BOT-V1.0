@@ -100,7 +100,7 @@ global.mytt = 'https://tiktok.com/@andymrlit'
 global.myttv = 'https://vt.tiktok/'
 global.botname = 'Andy Creator'
 global.akulaku = 'Bot By Andy'
-global.ttname = 'TikTok By andy'
+global.ttname = 'Creator andy'
 
 //—————「 Set Random Image Menu 」—————//
 //gausah di apa² in!
