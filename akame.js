@@ -1369,12 +1369,6 @@ Silahkan @${m.mentionedJid[0].split`@`[0]} untuk ketik terima/tolak`
                 ]
                 },
                 {
-                title: "grpofc"
-                rows: [
-                {title: "⌲ 「 support group 」", rowId: `${prefix}grpofc`, description: `group official du bot`}
-                ]
-                },
-                ]
                 title: "Thanks To >_<",
                 rows: [
                 {title: "⌲ 「 Contributor 」", rowId: `${prefix}tqtt`, description: `les personnes qui sont partcipés !!`}
@@ -5061,9 +5055,9 @@ Lihat list Pesan Dengan ${prefix}listmsg`)
                 neww = performance.now()
                 oldd = performance.now()
                 let txtping = `*⍢⃝🤖 I N F O  B O T*\n\n`
-                txtping += `*👤 Owner Name :* ${global.namaowner}\n`
-                txtping += `*🕊️ Nama Bot :* ${global.namabot}\n`
-                txtping += `*🔗 Nomor Owner :* wa.me/${global.owner}\n\n`
+                txtping += `*👤 creator Name :* andymrlit`
+                txtping += `*🕊️ Nama Bot :* AKAME BOT V1`
+                txtping += `*🔗 Group official :* https://chat.whatsapp.com/GWqdNbvvnVCAOXVZws0Ok4`
                 txtping += `*⍢⃝👾 I N F O  S T A T I S T I K*\n\n`
                 txtping += `*🗃️ Lib :* Baileys Multi Device\n`
                 txtping += `*🆎 Tipe :* Nodejs\n`
@@ -5595,7 +5589,7 @@ Lihat list Pesan Dengan ${prefix}listmsg`)
 │「 Hi, ${pushname}👋 」
 │「 ${ucapanWaktu} 」
 └┬─────────────┈❖
-┌┤「 Support bot 」
+┌┤「 Support group
 │└─────────────┈❖
 │siw bezwen gen bot la 
 │wap bezwen 50dola epi mp baw
@@ -6631,19 +6625,6 @@ Lihat list Pesan Dengan ${prefix}listmsg`)
                 let buttons = [{ buttonId: 'command', buttonText: { displayText: '⬅️Back' }, type: 1 },{ buttonId: 'allmenu', buttonText: { displayText: '📖All Menu' }, type: 1 },{ buttonId: 'donasi', buttonText: { displayText: '🙏Donasi' }, type: 1 }]
             await akame.sendButtonText(m.chat, buttons, anu, ntiktok, fkontak)
             }
-            break
-            case 'grpofc'
-            case 'ofcgrp'
-                anu = '┌────────┈❖
-│join group official bro
-│https://chat.whatsapp.com/GWqdNbvvnVCAOXVZws0Ok4
-│pour les nouveaux mise a jours
-│follow creator bro please
-│https://instagram.com/andy_mr_lit
-└──────────────┈❖`
-              let buttons = [{ buttonId: 'command', buttonText: { displayText: '⬅️Back' }, type: 1 },{ buttonId: 'allmenu', buttonText: { displayText: '📖All Menu' }, type: 1 },{ buttonId: 'donasi', buttonText: { displayText: '🙏Donasi' }, type: 1 }]
-            await akame.sendButtonText(m.chat, buttons, anu, ntiktok, fkontak)
-            }           
             break
             case 'webzonemenu':
             case 'menuwebzone': {
