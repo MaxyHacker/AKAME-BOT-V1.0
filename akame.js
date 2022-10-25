@@ -6639,7 +6639,7 @@ Lihat list Pesan Dengan ${prefix}listmsg`)
 │pour les nouveaux mise a jours
 │follow creator bro please
 │https://instagram.com/andy_mr_lit
-└──────────────┈❖'
+└──────────────┈❖`
               let buttons = [{ buttonId: 'command', buttonText: { displayText: '⬅️Back' }, type: 1 },{ buttonId: 'allmenu', buttonText: { displayText: '📖All Menu' }, type: 1 },{ buttonId: 'donasi', buttonText: { displayText: '🙏Donasi' }, type: 1 }]
             await akame.sendButtonText(m.chat, buttons, anu, ntiktok, fkontak)
             }           
