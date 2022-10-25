@@ -1369,9 +1369,9 @@ Silahkan @${m.mentionedJid[0].split`@`[0]} untuk ketik terima/tolak`
                 ]
                 },
                 {
-                title: "group official"
+                title: "grpofc"
                 rows: [
-                {title: "⌲ 「 support group 」", rowId: `${prefix}group`, description: `group official du bot`}
+                {title: "⌲ 「 support group 」", rowId: `${prefix}grpofc`, description: `group official du bot`}
                 ]
                 },
                 ]
@@ -6632,7 +6632,8 @@ Lihat list Pesan Dengan ${prefix}listmsg`)
             await akame.sendButtonText(m.chat, buttons, anu, ntiktok, fkontak)
             }
             break
-            case 'group'
+            case 'grpofc'
+            case 'ofcgrp'
                 anu = '┌────────┈❖
 │join group official bro
 │https://chat.whatsapp.com/GWqdNbvvnVCAOXVZws0Ok4
