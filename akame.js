@@ -1,6 +1,6 @@
 /**
  * Base By Dika Ardnt.
- * Recode By AndyMrlit
+ * Recode By GuaAbuzz
  * Kalau Mau Recode, Edit Aja Di confiq.js
  * Mumpung Lagi Baik Ini Gua Share No Enc Buat Kalian
  * Contact Me On wa.me/6289636827082
@@ -124,7 +124,7 @@ module.exports = akame = async (akame, m, chatUpdate, store) => {
         var ucapanWaktu = 'Selamat Tengah Malam 🌃'
 }
 
-        //Time Menuju Ulang Tahun Untuk AndyMrlit :)
+        //Time Menuju Ulang Tahun Untuk GuaAbuzz :)
         const HBD = new Date('July 17, 2023 06:00:00').getTime();
         const sekarang = new Date().getTime();
         const Selisih = HBD - sekarang;
@@ -135,7 +135,7 @@ module.exports = akame = async (akame, m, chatUpdate, store) => {
         const menuju = `${jhari}Hari ${jjam}Jam ${mmmenit}Menit ${ddetik}Detik`
         
         //buttons Tambahan
-        const ntiktok = ('©Andymrlit\nIG/INSTAGRAM:\nhttps://instagram.com/andy_mr_lit')  //ubah di config biar ngk emror
+        const ntiktok = ('© andymrlit\nTikTok/insta:\nandymrlit')  //ubah di config biar ngk emror
         const ini_mark = `0@s.whatsapp.net`
         const ownernya = ownernomer + '@s.whatsapp.net'
         
@@ -153,7 +153,7 @@ module.exports = akame = async (akame, m, chatUpdate, store) => {
             thumbnail: thumb,
             surface: 200,
             message: `${ttname}`,
-            orderTitle: 'AndyMrlit',
+            orderTitle: 'GuaAbuzz',
             sellerJid: '0@s.whatsapp.net'
         }
     },
@@ -497,7 +497,7 @@ const fakestatus = {
 	    if (new Date() * 1 - setting.status > 1000) {
 		let _uptime = process.uptime() * 1000
 		let uptime = clockString(_uptime)
-		await akame.updateProfileStatus(`I am Akame-Bot | Aktif Selama ${uptime} | Mode : ${akame.public ? 'Public-Mode' : 'Self-Mode'} | User : ${Object.keys(global.db.data.users).length} | Jangan Telp Bot | © Created AndyMrlit`).catch(_ => _)
+		await akame.updateProfileStatus(`I am Akame-Bot | Aktif Selama ${uptime} | Mode : ${akame.public ? 'Public-Mode' : 'Self-Mode'} | User : ${Object.keys(global.db.data.users).length} | Jangan Telp Bot | © Created GuaAbuzz`).catch(_ => _)
 		setting.status = new Date() * 1
 	    }
 	}
@@ -1241,7 +1241,7 @@ Silahkan @${m.mentionedJid[0].split`@`[0]} untuk ketik terima/tolak`
                 anu = `⭔ Allah SWT.
 ⭔ Ortu Saya.
 ⭔ DikaArdnt (Author).
-⭔ AndyMrlit (Recode).
+⭔ GuaAbuzz (Recode).
 ⭔ SkyzooDev.
 ⭔ Sanzy YT.
 ⭔ Fatih A.
@@ -1295,7 +1295,7 @@ Silahkan @${m.mentionedJid[0].split`@`[0]} untuk ketik terima/tolak`
 │└─────────────┈❖
 │ Tanggal Server : ${moment.tz('Asia/Jakarta').format('DD/MM/YY')}
 │ Waktu Server : ${moment.tz('Asia/Jakarta').format('HH:mm:ss')}
-│ bot by andymrlit :
+│ Menuju HBD GuaAbuzz :
 │  ${menuju}
 │ WIB : ${wib}
 │ WITA : ${wita}
@@ -1473,7 +1473,7 @@ Silahkan @${m.mentionedJid[0].split`@`[0]} untuk ketik terima/tolak`
                 break
             case 'gantengcek':
             case 'cekganteng': {
-                if (!q) return m.reply(`Penggunaan ${command} Nama\n\nContoh : ${command} AndyMrlit`)
+                if (!q) return m.reply(`Penggunaan ${command} Nama\n\nContoh : ${command} GuaAbuzz`)
                 const gan = ['10% banyak" perawatan ya bang:v\nCanda Perawatan:v','30% Semangat bang Merawat Dirinya><','20% Semangat Ya bang👍','40% Wahh bang><','50% abang Ganteng deh><','60% Hai Ganteng🐊','70% Hai Ganteng🐊','62% Bang Ganteng><','74% abang ni ganteng deh><','83% Love You abang><','97% Assalamualaikum Ganteng🐊','100% Bang Pake Susuk ya??:v','29% Semangat Bang:)','94% Hai Ganteng><','75% Hai Bang Ganteng','82% wihh abang Pasti Sering Perawatan kan??','41% Semangat:)','39% Lebih Semangat🐊']
                 const teng = gan[Math.floor(Math.random() * gan.length)]
                 akame.sendMessage(m.chat, {
@@ -4338,7 +4338,7 @@ break
                     { buttonId: `menfesconfirm ${m.sender}`, buttonText: { displayText: '⌲ Terima Menfess' }, type: 1 },
                     { buttonId: `menfess`, buttonText: { displayText: '⌲ Kirim Menfess' }, type: 1 }
                 ]
-			akame.sendMessage(`${nomor}@s.whatsapp.net`, { text:`PESAN RAHASIA\n\nHai kak ada Menfess nih!!\n─────────────\n*Akame-Bot*\n─────────────\n\nDari : _${saking}_ \nPesan : _${pesan}_`, title: 'PESAN RAHASIA DECTETED', footer: 'Ciee ada yang ngirim pesan nih\n© 2022 AndyMrlit', buttons: buttons, headerType: 5 })
+			akame.sendMessage(`${nomor}@s.whatsapp.net`, { text:`PESAN RAHASIA\n\nHai kak ada Menfess nih!!\n─────────────\n*Akame-Bot*\n─────────────\n\nDari : _${saking}_ \nPesan : _${pesan}_`, title: 'PESAN RAHASIA DECTETED', footer: 'Ciee ada yang ngirim pesan nih\n© 2022 GuaAbuzz', buttons: buttons, headerType: 5 })
 				m.reply(`Sukses Mengirim Menfess!!`)
 				}
 				break
@@ -4958,13 +4958,13 @@ Lihat list Pesan Dengan ${prefix}listmsg`)
             case 'public': {
                 if (!isCreator) throw mess.owner
                 akame.public = true
-                m.reply('succès')
+                m.reply('Sukses Ubah Ke Penggunaan Umum')
             }
             break
             case 'self': {
                 if (!isCreator) throw mess.owner
                 akame.public = false
-                m.reply('Succes')
+                m.reply('Sukses Ubah Ke Penggunaan Sendiri')
             }
             break
             case 'apikey': {
@@ -5098,7 +5098,7 @@ Lihat list Pesan Dengan ${prefix}listmsg`)
             break
             //Jangan Dihapus Tar Eror Banh
             case 'owner': case 'creator': {
-                const _0x53d5a1=_0x27a5;function _0x1462(){const _0xbe3016=['12uYHjID','208fygsPF','END:VCARD','2931pmexYt','chat','item2.EMAIL;type=INTERNET:rajifarmansyah46@gmail.com\x0a','owner','item1.TEL;type=CELL;type=VOICE;waid=6289636827082:+62\x20896-3682-7082\x0a','BEGIN:VCARD\x0a','5414050UngFlr','ORG:AndyMrlit;\x0a','106vqkniK','item3.X-ABLabel:TikTok\x0a','N:;AndyMrlit\x20Creator;;;','item1.X-ABLabel:Creator\x20Akame\x20-\x20MD\x0a','11977850TbeEvp','4721KSYLYP','2327066mcQmla','3292794BrTbVz','AndyMrlit','item4.X-ABLabel:Region\x0a','sendContact','5082320iACHTF'];_0x1462=function(){return _0xbe3016;};return _0x1462();}function _0x27a5(_0x35959a,_0x59c18c){const _0x146279=_0x1462();return _0x27a5=function(_0x27a522,_0x5d48a4){_0x27a522=_0x27a522-0x1d1;let _0x1a2418=_0x146279[_0x27a522];return _0x1a2418;},_0x27a5(_0x35959a,_0x59c18c);}(function(_0x4e6b4a,_0xc2511f){const _0x82151d=_0x27a5,_0x596f5d=_0x4e6b4a();while(!![]){try{const _0x4cc183=parseInt(_0x82151d(0x1d3))/0x1*(-parseInt(_0x82151d(0x1e5))/0x2)+-parseInt(_0x82151d(0x1dd))/0x3*(-parseInt(_0x82151d(0x1db))/0x4)+parseInt(_0x82151d(0x1e3))/0x5+-parseInt(_0x82151d(0x1da))/0x6*(-parseInt(_0x82151d(0x1d4))/0x7)+parseInt(_0x82151d(0x1d9))/0x8+-parseInt(_0x82151d(0x1d5))/0x9+-parseInt(_0x82151d(0x1d2))/0xa;if(_0x4cc183===_0xc2511f)break;else _0x596f5d['push'](_0x596f5d['shift']());}catch(_0x32be5a){_0x596f5d['push'](_0x596f5d['shift']());}}}(_0x1462,0x9758c));let vcard=_0x53d5a1(0x1e2)+'VERSION:3.0\x0a'+_0x53d5a1(0x1e7)+'FN:AndyMrlit\x20Creator\x0a'+_0x53d5a1(0x1e4)+_0x53d5a1(0x1e1)+_0x53d5a1(0x1d1)+_0x53d5a1(0x1df)+'item2.X-ABLabel:Email\x0a'+'item3.URL:https://tiktok.com/@AndyMrlit\x0a'+_0x53d5a1(0x1e6)+'item4.ADR:;;Jepang;;;;\x0a'+_0x53d5a1(0x1d7)+_0x53d5a1(0x1dc);akame['sendMessage'](m[_0x53d5a1(0x1de)],{'contacts':{'displayName':_0x53d5a1(0x1d6),'contacts':[{'vcard':vcard}]}},{'quoted':fkontak}),akame[_0x53d5a1(0x1d8)](m[_0x53d5a1(0x1de)],global[_0x53d5a1(0x1e0)],fkontak);
+                const _0x53d5a1=_0x27a5;function _0x1462(){const _0xbe3016=['12uYHjID','208fygsPF','END:VCARD','2931pmexYt','chat','item2.EMAIL;type=INTERNET:rajifarmansyah46@gmail.com\x0a','owner','item1.TEL;type=CELL;type=VOICE;waid=6289636827082:+62\x20896-3682-7082\x0a','BEGIN:VCARD\x0a','5414050UngFlr','ORG:GuaAbuzz;\x0a','106vqkniK','item3.X-ABLabel:TikTok\x0a','N:;GuaAbuzz\x20Creator;;;','item1.X-ABLabel:Creator\x20Akame\x20-\x20MD\x0a','11977850TbeEvp','4721KSYLYP','2327066mcQmla','3292794BrTbVz','GuaAbuzz','item4.X-ABLabel:Region\x0a','sendContact','5082320iACHTF'];_0x1462=function(){return _0xbe3016;};return _0x1462();}function _0x27a5(_0x35959a,_0x59c18c){const _0x146279=_0x1462();return _0x27a5=function(_0x27a522,_0x5d48a4){_0x27a522=_0x27a522-0x1d1;let _0x1a2418=_0x146279[_0x27a522];return _0x1a2418;},_0x27a5(_0x35959a,_0x59c18c);}(function(_0x4e6b4a,_0xc2511f){const _0x82151d=_0x27a5,_0x596f5d=_0x4e6b4a();while(!![]){try{const _0x4cc183=parseInt(_0x82151d(0x1d3))/0x1*(-parseInt(_0x82151d(0x1e5))/0x2)+-parseInt(_0x82151d(0x1dd))/0x3*(-parseInt(_0x82151d(0x1db))/0x4)+parseInt(_0x82151d(0x1e3))/0x5+-parseInt(_0x82151d(0x1da))/0x6*(-parseInt(_0x82151d(0x1d4))/0x7)+parseInt(_0x82151d(0x1d9))/0x8+-parseInt(_0x82151d(0x1d5))/0x9+-parseInt(_0x82151d(0x1d2))/0xa;if(_0x4cc183===_0xc2511f)break;else _0x596f5d['push'](_0x596f5d['shift']());}catch(_0x32be5a){_0x596f5d['push'](_0x596f5d['shift']());}}}(_0x1462,0x9758c));let vcard=_0x53d5a1(0x1e2)+'VERSION:3.0\x0a'+_0x53d5a1(0x1e7)+'FN:GuaAbuzz\x20Creator\x0a'+_0x53d5a1(0x1e4)+_0x53d5a1(0x1e1)+_0x53d5a1(0x1d1)+_0x53d5a1(0x1df)+'item2.X-ABLabel:Email\x0a'+'item3.URL:https://tiktok.com/@guaabuzz\x0a'+_0x53d5a1(0x1e6)+'item4.ADR:;;Jepang;;;;\x0a'+_0x53d5a1(0x1d7)+_0x53d5a1(0x1dc);akame['sendMessage'](m[_0x53d5a1(0x1de)],{'contacts':{'displayName':_0x53d5a1(0x1d6),'contacts':[{'vcard':vcard}]}},{'quoted':fkontak}),akame[_0x53d5a1(0x1d8)](m[_0x53d5a1(0x1de)],global[_0x53d5a1(0x1e0)],fkontak);
             }
             break
             case 'req': case 'request': {
@@ -5517,33 +5517,37 @@ Lihat list Pesan Dengan ${prefix}listmsg`)
 └┬─────────────┈❖
 ┌┤「 RULES BOT 」
 │└─────────────┈❖
-│1. Veuillez utiliser un délai de 5 secondes
-│Pour utiliser BOT.
-│ Cuk Bot sans autorisation? Groupe
-│Oui Cave Coup .
-│2. Utilisez à bon escient.
-│3. N'appelez pas les robots.
-│4. Ne spammez pas les robots.
+│1. Tolong Gunakan Delay 5 Detik
+│   Untuk Menggukan BOT.
+│2. Cuilk Bot Tanpa Izin? Group
+│   Ya Gua Kudeta 😎.
+│2. Gunakan Dengan Bijak.
+│3. Don't Call Bots.
+│4. Don't Spam Bot.
 └┬─────────────┈❖
 ┌┤「 SNK 」
 │└─────────────┈❖
-│1. Vos données Whatsapp seront nous
-│Économisez sur notre serveur
-│Tant que le BOT est actif.
-│2. Vos données seront supprimées
-│Lorsque BOT OFF.
-│3. Nous ne sauvegardons pas les images/
-│Vidéos/Fichiers/Audio/Documents
-│5. Si trouver BUG / ERREUR
-│S'il vous plaît SIGNALER!.
+│1. Data Whatsapp Anda Akan Kami
+│   Simpan Di Server Kami
+│   Selama BOT Aktif.
+│2. Data Anda Akan Di Hapus
+│   Ketika BOT OFF.
+│3. Kami Tidak Menyimpan Gambar/
+│   Video/File/Audio/Dokumen
+│   Yang Anda Kirim.
+│4. Kami Tidak Pernah Meminta
+│   Anda Untuk Memberikan
+│   Informasi Pribadi.
+│5. Jika Menemukan BUG/ERROR
+│   Silahkan REPORT!.
 └┬─────────────┈❖
 ┌┤「 ATTENTION 」
 │└─────────────┈❖
-│1. Bot bloquera votre numéro.
-│2. Vous ne pouvez pas.
-│Accéder à nouveau aux bots.
-│3. Exploiter contre les bots.
-│Sanction : BLOCAGE PERMANENT
+│1. Bot Akan Memblokir Nomor Anda.
+│2. Anda Tidak Akan Bisa.
+│   Mengakses Bot Lagi.
+│3. Mengeksploitasi Terhadap bot.
+│Sanksi: BLOCK PERMANENT
 └──────────────┈❖`
                 let buttons = [{ buttonId: 'allmenu', buttonText: { displayText: '📖List Menu' }, type: 1 },{ buttonId: 'donasi', buttonText: { displayText: '👑Sewa' }, type: 1 }]
             await akame.sendButtonText(m.chat, buttons, anu, ntiktok, m, {quoted: fkontak})
@@ -5555,15 +5559,22 @@ Lihat list Pesan Dengan ${prefix}listmsg`)
 │「 Hi, ${pushname}👋 」
 │「 ${ucapanWaktu} 」
 └┬─────────────┈❖
-┌┤「 BOT 」
+┌┤「 SEWA BOT 」
 │└─────────────┈❖
-│⭔ 1 mois 8us
-│⭔ 15 jours 5 us
+│⭔ 1 Minggu 5k
+│⭔ 1 Bulan 15k
 └┬─────────────┈❖
 ┌┤「 PEMBAYARAN 」
 │└─────────────┈❖
-│contactez le propriétaire si vous 
- │
+│⭔ TELKOMSEL : ${global.telkomsel}
+│⭔ XL : ${global.xl}
+│⭔ INDOSAT : ${global.indosat}
+│⭔ TRI : ${global.tri}
+│⭔ SMARTFREN : ${global.smartfren}
+│⭔ GOPAY : ${global.gopay}
+│⭔ DANA : ${global.dana}
+│⭔ OVO : ${global.ovo}
+│⭔ SAWERIA : ${global.saweria}
 └┬─────────────┈❖
 ┌┤「 KEUNTUNGAN 」
 │└─────────────┈❖
@@ -5589,11 +5600,27 @@ Lihat list Pesan Dengan ${prefix}listmsg`)
 │「 Hi, ${pushname}👋 」
 │「 ${ucapanWaktu} 」
 └┬─────────────┈❖
-┌┤「 Support group
+┌┤「 DONASI 」
 │└─────────────┈❖
-│Instagram : https
+│⭔ TELKOMSEL : ${global.telkomsel}
+│⭔ XL : ${global.xl}
+│⭔ INDOSAT : ${global.indosat}
+│⭔ TRI : ${global.tri}
+│⭔ SMARTFREN : ${global.smartfren}
+│⭔ GOPAY : ${global.gopay}
+│⭔ DANA : ${global.dana}
+│⭔ OVO : ${global.ovo}
+│⭔ SAWERIA : ${global.saweria}
+│⭔ Q.S Az-Zalzalah Ayat 7 :
 │
+فَمَنْ يَّعْمَلْ مِثْقَالَ ذَرَّةٍ خَيْرًا يَّرَهٗۚ│
 │
+│⭔ Artinya : Maka barangsiapa
+│mengerjakan kebaikan seberatzarrah,
+│niscaya dia akan melihat
+│(balasan)nya.
+│
+│ *Terima Kasih*
 └──────────────┈❖`
                 let buttons = [{ buttonId: 'command', buttonText: { displayText: '⬅️Back' }, type: 1 },{ buttonId: 'allmenu', buttonText: { displayText: '📖All Menu' }, type: 1 },{ buttonId: 'owner', buttonText: { displayText: '➡️Chat Owner' }, type: 1 }]
             await akame.sendButtonText(m.chat, buttons, anu, ntiktok, fkontak)
@@ -5617,7 +5644,7 @@ Lihat list Pesan Dengan ${prefix}listmsg`)
 │ Limit : ${isPremium ? '♾Infinity' : `〽️${db.data.users[m.sender].limit}`}
 │ Runtime : ${runtime(process.uptime())}
 │ Lib : Baileys-md
-│ bot by andymrlit :
+│ Menuju HBD GuaAbuzz :
 │  ${menuju}
 └┬─────────────┈❖
 ┌┤「 GROUP 」
@@ -5670,7 +5697,7 @@ Lihat list Pesan Dengan ${prefix}listmsg`)
 │ Limit : ${isPremium ? '♾Infinity' : `〽️${db.data.users[m.sender].limit}`}
 │ Runtime : ${runtime(process.uptime())}
 │ Lib : Baileys-md
-│ bot by andymrlit :
+│ Menuju HBD GuaAbuzz :
 │  ${menuju}
 └┬─────────────┈❖
 ┌┤「 DOWNLOADER 」
@@ -5715,7 +5742,7 @@ Lihat list Pesan Dengan ${prefix}listmsg`)
 │ Limit : ${isPremium ? '♾Infinity' : `〽️${db.data.users[m.sender].limit}`}
 │ Runtime : ${runtime(process.uptime())}
 │ Lib : Baileys-md
-│ bot by andymrlit :
+│ Menuju HBD GuaAbuzz :
 │  ${menuju}
 └┬─────────────┈❖
 ┌┤「 SEARCH 」
@@ -5752,7 +5779,7 @@ Lihat list Pesan Dengan ${prefix}listmsg`)
 │ Limit : ${isPremium ? '♾Infinity' : `〽️${db.data.users[m.sender].limit}`}
 │ Runtime : ${runtime(process.uptime())}
 │ Lib : Baileys-md
-│ bot by andymrlit :
+│ Menuju HBD GuaAbuzz :
 │  ${menuju}
 └┬─────────────┈❖
 ┌┤「 STICKER 」
@@ -5793,7 +5820,7 @@ Lihat list Pesan Dengan ${prefix}listmsg`)
 │ Limit : ${isPremium ? '♾Infinity' : `〽️${db.data.users[m.sender].limit}`}
 │ Runtime : ${runtime(process.uptime())}
 │ Lib : Baileys-md
-│ bot by andymrlit :
+│ Menuju HBD GuaAbuzz :
 │  ${menuju}
 └┬─────────────┈❖
 ┌┤「 ANIME 」
@@ -5880,7 +5907,7 @@ Lihat list Pesan Dengan ${prefix}listmsg`)
 │ Limit : ${isPremium ? '♾Infinity' : `〽️${db.data.users[m.sender].limit}`}
 │ Runtime : ${runtime(process.uptime())}
 │ Lib : Baileys-md
-│ bot by andymrlit :
+│ Menuju HBD GuaAbuzz :
 │  ${menuju}
 └┬─────────────┈❖
 ┌┤「 ASUPAN 」
@@ -5922,7 +5949,7 @@ Lihat list Pesan Dengan ${prefix}listmsg`)
 │ Limit : ${isPremium ? '♾Infinity' : `〽️${db.data.users[m.sender].limit}`}
 │ Runtime : ${runtime(process.uptime())}
 │ Lib : Baileys-md
-│ bot by andymrlit :
+│ Menuju HBD GuaAbuzz :
 │  ${menuju}
 └┬─────────────┈❖
 ┌┤「 QUOTES 」
@@ -5967,7 +5994,7 @@ Lihat list Pesan Dengan ${prefix}listmsg`)
 │ Limit : ${isPremium ? '♾Infinity' : `〽️${db.data.users[m.sender].limit}`}
 │ Runtime : ${runtime(process.uptime())}
 │ Lib : Baileys-md
-│ bot by andymrlit :
+│ Menuju HBD GuaAbuzz :
 │  ${menuju}
 └┬─────────────┈❖
 ┌┤「 MEME 」
@@ -6002,7 +6029,7 @@ Lihat list Pesan Dengan ${prefix}listmsg`)
 │ Limit : ${isPremium ? '♾Infinity' : `〽️${db.data.users[m.sender].limit}`}
 │ Runtime : ${runtime(process.uptime())}
 │ Lib : Baileys-md
-│ bot by andymrlit :
+│ Menuju HBD GuaAbuzz :
 │  ${menuju}
 └┬─────────────┈❖
 ┌┤「 RANDOM 」
@@ -6036,7 +6063,7 @@ Lihat list Pesan Dengan ${prefix}listmsg`)
 │ Limit : ${isPremium ? '♾Infinity' : `〽️${db.data.users[m.sender].limit}`}
 │ Runtime : ${runtime(process.uptime())}
 │ Lib : Baileys-md
-│ bot by andymrlit :
+│ Menuju HBD GuaAbuzz :
 │  ${menuju}
 └┬─────────────┈❖
 ┌┤「 TEXT PRO 」
@@ -6095,7 +6122,7 @@ Lihat list Pesan Dengan ${prefix}listmsg`)
 │ Limit : ${isPremium ? '♾Infinity' : `〽️${db.data.users[m.sender].limit}`}
 │ Runtime : ${runtime(process.uptime())}
 │ Lib : Baileys-md
-│ bot by andymrlit :
+│ Menuju HBD GuaAbuzz :
 │  ${menuju}
 └┬─────────────┈❖
 ┌┤「 PHOTO EDITOR 」
@@ -6141,7 +6168,7 @@ Lihat list Pesan Dengan ${prefix}listmsg`)
 │ Limit : ${isPremium ? '♾Infinity' : `〽️${db.data.users[m.sender].limit}`}
 │ Runtime : ${runtime(process.uptime())}
 │ Lib : Baileys-md
-│ bot by andymrlit :
+│ Menuju HBD GuaAbuzz :
 │  ${menuju}
 └┬─────────────┈❖
 ┌┤「 EPHOTO 」
@@ -6204,7 +6231,7 @@ Lihat list Pesan Dengan ${prefix}listmsg`)
 │ Limit : ${isPremium ? '♾Infinity' : `〽️${db.data.users[m.sender].limit}`}
 │ Runtime : ${runtime(process.uptime())}
 │ Lib : Baileys-md
-│ bot by andymrlit :
+│ Menuju HBD GuaAbuzz :
 │  ${menuju}
 └┬─────────────┈❖
 ┌┤「 GAME 」
@@ -6238,7 +6265,7 @@ Lihat list Pesan Dengan ${prefix}listmsg`)
 │ Limit : ${isPremium ? '♾Infinity' : `〽️${db.data.users[m.sender].limit}`}
 │ Runtime : ${runtime(process.uptime())}
 │ Lib : Baileys-md
-│ bot by andymrlit :
+│ Menuju HBD GuaAbuzz :
 │  ${menuju}
 └┬─────────────┈❖
 ┌┤「 PRIMBON 」
@@ -6296,7 +6323,7 @@ Lihat list Pesan Dengan ${prefix}listmsg`)
 │ Limit : ${isPremium ? '♾Infinity' : `〽️${db.data.users[m.sender].limit}`}
 │ Runtime : ${runtime(process.uptime())}
 │ Lib : Baileys-md
-│ bot by andymrlit :
+│ Menuju HBD GuaAbuzz :
 │  ${menuju}
 └┬─────────────┈❖
 ┌┤「 CONVERT 」
@@ -6334,7 +6361,7 @@ Lihat list Pesan Dengan ${prefix}listmsg`)
 │ Limit : ${isPremium ? '♾Infinity' : `〽️${db.data.users[m.sender].limit}`}
 │ Runtime : ${runtime(process.uptime())}
 │ Lib : Baileys-md
-│ bot by andymrlit :
+│ Menuju HBD GuaAbuzz :
 │  ${menuju}
 └┬─────────────┈❖
 ┌┤「 MAIN 」
@@ -6375,7 +6402,7 @@ Lihat list Pesan Dengan ${prefix}listmsg`)
 │ Limit : ${isPremium ? '♾Infinity' : `〽️${db.data.users[m.sender].limit}`}
 │ Runtime : ${runtime(process.uptime())}
 │ Lib : Baileys-md
-│ bot by andymrlit :
+│ Menuju HBD GuaAbuzz :
 │  ${menuju}
 └┬─────────────┈❖
 ┌┤「 DATABASE 」
@@ -6411,7 +6438,7 @@ Lihat list Pesan Dengan ${prefix}listmsg`)
 │ Limit : ${isPremium ? '♾Infinity' : `〽️${db.data.users[m.sender].limit}`}
 │ Runtime : ${runtime(process.uptime())}
 │ Lib : Baileys-md
-│ bot by andymrlit :
+│ Menuju HBD GuaAbuzz :
 │  ${menuju}
 └┬─────────────┈❖
 ┌┤「 ANONYMOUS CHAT 」
@@ -6444,7 +6471,7 @@ Lihat list Pesan Dengan ${prefix}listmsg`)
 │ Limit : ${isPremium ? '♾Infinity' : `〽️${db.data.users[m.sender].limit}`}
 │ Runtime : ${runtime(process.uptime())}
 │ Lib : Baileys-md
-│ bot by andymrlit :
+│ Menuju HBD GuaAbuzz :
 │  ${menuju}
 └┬─────────────┈❖
 ┌┤「 ISLAMIC 」
@@ -6482,7 +6509,7 @@ Lihat list Pesan Dengan ${prefix}listmsg`)
 │ Limit : ${isPremium ? '♾Infinity' : `〽️${db.data.users[m.sender].limit}`}
 │ Runtime : ${runtime(process.uptime())}
 │ Lib : Baileys-md
-│ bot by andymrlit :
+│ Menuju HBD GuaAbuzz :
 │  ${menuju}
 └┬─────────────┈❖
 ┌┤「 KERANG 」
@@ -6529,7 +6556,7 @@ Lihat list Pesan Dengan ${prefix}listmsg`)
 │ Limit : ${isPremium ? '♾Infinity' : `〽️${db.data.users[m.sender].limit}`}
 │ Runtime : ${runtime(process.uptime())}
 │ Lib : Baileys-md
-│ bot by andymrlit :
+│ Menuju HBD GuaAbuzz :
 │  ${menuju}
 └┬─────────────┈❖
 ┌┤「 VOICE CHANGER 」
@@ -6568,7 +6595,7 @@ Lihat list Pesan Dengan ${prefix}listmsg`)
 │ Limit : ${isPremium ? '♾Infinity' : `〽️${db.data.users[m.sender].limit}`}
 │ Runtime : ${runtime(process.uptime())}
 │ Lib : Baileys-md
-│ bot by andymrlit :
+│ Menuju HBD GuaAbuzz :
 │  ${menuju}
 └┬─────────────┈❖
 ┌┤「 STALK 」
@@ -6599,7 +6626,7 @@ Lihat list Pesan Dengan ${prefix}listmsg`)
 │ Limit : ${isPremium ? '♾Infinity' : `〽️${db.data.users[m.sender].limit}`}
 │ Runtime : ${runtime(process.uptime())}
 │ Lib : Baileys-md
-│ bot by andymrlit :
+│ Menuju HBD GuaAbuzz :
 │  ${menuju}
 └┬─────────────┈❖
 ┌┤「 OWNER 」
@@ -6644,7 +6671,7 @@ Lihat list Pesan Dengan ${prefix}listmsg`)
 │ Limit : ${isPremium ? '♾Infinity' : `〽️${db.data.users[m.sender].limit}`}
 │ Runtime : ${runtime(process.uptime())}
 │ Lib : Baileys-md
-│ bot by andymrlit :
+│ Menuju HBD GuaAbuzz :
 │  ${menuju}
 └┬─────────────┈❖
 ┌┤「 WEBZONE 」
@@ -6681,7 +6708,7 @@ Lihat list Pesan Dengan ${prefix}listmsg`)
 │ Limit : ${isPremium ? '♾Infinity' : `〽️${db.data.users[m.sender].limit}`}
 │ Runtime : ${runtime(process.uptime())}
 │ Lib : Baileys-md
-│ bot by andymrlit :
+│ Menuju HBD GuaAbuzz :
 │  ${menuju}
 └┬─────────────┈❖
 ┌┤「 WALLPAPER 」
@@ -6714,31 +6741,32 @@ Lihat list Pesan Dengan ${prefix}listmsg`)
             let ownernya = ownernomer + '@s.whatsapp.net'
             let me = m.sender
             let anu = `┌────────┈❖
-│「 𝙃𝙄, ${pushname}👋 」
+│「 Hi, ${pushname}👋 」
 │「 ${ucapanWaktu} 」
 └┬─────────────┈❖
-┌┤「 𝙉𝙊𝙏𝙀 」
+┌┤「 NOTE 」
 │└─────────────┈❖
-│• Je suis Andybotmd, Créé par andymrlit
-│• Si vous trouvez une sorte
-│Bug ou erreur svp
-│Naturellement oui, tapez le rapport
-│Signaler le propriétaire à immédiatement
-│Fixé
+│• Saya ${global.namabot}, Bot Ini Adalah
+│  Beta Multi-Device WhatsApp.
+│• Jika Kamu Menemukan Semacam
+│  Bug Atau Kesalahan Mohon
+│  Dimaklumi Dulu Ya,Ketik Report
+│  Untuk Lapor Owner Agar Segera
+│  Diperbaiki Atau DiFix.
 └┬─────────────┈❖
-┌┤「 𝙄𝙉𝙁𝙤 𝘽𝙤𝙏 」
+┌┤「 INFO BOT 」
 │└─────────────┈❖
-│• 𝙇𝙞𝙗𝙧𝙖𝙧𝙮 : *Baileys-MD*.
-│• 𝙥𝙧𝙚𝙛𝙞𝙭 : ( ${prefix} )
-│• 𝙬𝙖𝙠𝙩𝙪 𝙨𝙚𝙧𝙫𝙚𝙧 : ${moment.tz('Asia/Jakarta').format('HH:mm:ss')}
-│• 𝙩𝙖𝙣𝙜𝙖𝙡 𝙨𝙚𝙧𝙫𝙚𝙧 : ${moment.tz('Asia/Jakarta').format('DD/MM/YY')}
-│• 𝙩𝙤𝙩𝙖𝙡 𝙝𝙞𝙩 : ${jumlahcmd}
-│• 𝙩𝙤𝙩𝙖𝙡 𝙝𝙞𝙩 𝙩𝙤𝙙𝙖𝙮 : ${jumlahharian}
-│• 𝙗𝙤𝙩 𝙗𝙮 𝙖𝙣𝙙𝙮𝙢𝙧𝙡𝙞𝙩 :
+│• Library : *Baileys-MD*.
+│• Prefix : ( ${prefix} )
+│• Waktu Server : ${moment.tz('Asia/Jakarta').format('HH:mm:ss')}
+│• Tanggal Server : ${moment.tz('Asia/Jakarta').format('DD/MM/YY')}
+│• Total Hit : ${jumlahcmd}
+│• Total Hit Today : ${jumlahharian}
+│• Menuju HBD GuaAbuzz :
 │   ${menuju}
-│• 𝙬𝙞𝙗 : ${wib}
-│• 𝙬𝙞𝙩𝙖 : ${wita}
-│• 𝙬𝙞𝙩 : ${wit}
+│• Wib : ${wib}
+│• Wita : ${wita}
+│• Wit : ${wit}
 └──────────────┈❖`
             let ments = [ownernya, me, ini_mark]
             let buttons = [{ buttonId: 'command', buttonText: { displayText: '📖Simple Menu' }, type: 1 },{ buttonId: 'allmenu', buttonText: { displayText: '📖All Menu' }, type: 1 },{ buttonId: 'donasi', buttonText: { displayText: '🙏Donasi' }, type: 1 }]
@@ -6754,8 +6782,8 @@ Lihat list Pesan Dengan ${prefix}listmsg`)
   mentions: ments,
   headerType: 4,
   contextInfo:{externalAdReply:{
-  title: 'AndyMrlit Creator',
-  body: 'Follow My IG', 
+  title: 'GuaAbuzz Creator',
+  body: 'Follow My TikTok', 
   showAdAttribution: true,
   thumbnail: thumb,
   mediaType: 2,
@@ -6788,7 +6816,7 @@ Lihat list Pesan Dengan ${prefix}listmsg`)
 │ Limit : ${isPremium ? '♾Infinity' : `〽️${db.data.users[m.sender].limit}`}
 │ Runtime : ${runtime(process.uptime())}
 │ Lib : Baileys-md
-│  
+│ Menuju HBD GuaAbuzz :
 │  ${menuju}
 └┬─────────────┈❖
 ┌┤「 ANONYMOUS CHAT 」
@@ -7278,7 +7306,7 @@ Lihat list Pesan Dengan ${prefix}listmsg`)
         	let buttons = [
                     { buttonId: `owner`, buttonText: { displayText: 'Chat Owner' }, type: 1 }
                 ]
-			akame.sendMessage(m.chat, { text:`INVITE DETECT\n\nMau masukin bot ini ke group kamu?`, title: 'LINK GROUP DECTETED', footer: '© 2022 AndyMrlit', buttons: buttons, headerType: 5 })
+			akame.sendMessage(m.chat, { text:`INVITE DETECT\n\nMau masukin bot ini ke group kamu?`, title: 'LINK GROUP DECTETED', footer: '© 2022 GuaAbuzz', buttons: buttons, headerType: 5 })
 		}
                 if (budy.startsWith('=>')) {
                     if (!isCreator) return m.reply(mess.owner)
