@@ -1,9 +1,9 @@
 /**
  * Base By Dika Ardnt.
- * Recode By GuaAbuzz
+ * Recode By Andy
  * Kalau Mau Recode, Edit Aja Di confiq.js
- * Contact Me On wa.me/6289636827082
- * Follow https://github.com/Abuzzpoet
+ * Contact Me On wa.me/50941411147
+ * Follow https://github.com/andymrlit
  */
 
 //gausah di apa² in!
