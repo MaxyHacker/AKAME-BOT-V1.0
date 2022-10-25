@@ -1369,6 +1369,12 @@ Silahkan @${m.mentionedJid[0].split`@`[0]} untuk ketik terima/tolak`
                 ]
                 },
                 {
+                title: "group official"
+                rows: [
+                {title: "⌲ 「 support group 」", rowId: `${prefix}group`, description: `group official du bot`}
+                ]
+                },
+                ]
                 title: "Thanks To >_<",
                 rows: [
                 {title: "⌲ 「 Contributor 」", rowId: `${prefix}tqtt`, description: `les personnes qui sont partcipés !!`}
@@ -5589,11 +5595,11 @@ Lihat list Pesan Dengan ${prefix}listmsg`)
 │「 Hi, ${pushname}👋 」
 │「 ${ucapanWaktu} 」
 └┬─────────────┈❖
-┌┤「 Support group
+┌┤「 Support bot 」
 │└─────────────┈❖
-│Instagram : https
-│
-│
+│siw bezwen gen bot la 
+│wap bezwen 50dola epi mp baw
+│on lien ak tt on video
 └──────────────┈❖`
                 let buttons = [{ buttonId: 'command', buttonText: { displayText: '⬅️Back' }, type: 1 },{ buttonId: 'allmenu', buttonText: { displayText: '📖All Menu' }, type: 1 },{ buttonId: 'owner', buttonText: { displayText: '➡️Chat Owner' }, type: 1 }]
             await akame.sendButtonText(m.chat, buttons, anu, ntiktok, fkontak)
@@ -6625,6 +6631,18 @@ Lihat list Pesan Dengan ${prefix}listmsg`)
                 let buttons = [{ buttonId: 'command', buttonText: { displayText: '⬅️Back' }, type: 1 },{ buttonId: 'allmenu', buttonText: { displayText: '📖All Menu' }, type: 1 },{ buttonId: 'donasi', buttonText: { displayText: '🙏Donasi' }, type: 1 }]
             await akame.sendButtonText(m.chat, buttons, anu, ntiktok, fkontak)
             }
+            break
+            case 'group'
+                anu = '┌────────┈❖
+│join group official bro
+│https://chat.whatsapp.com/GWqdNbvvnVCAOXVZws0Ok4
+│pour les nouveaux mise a jours
+│follow creator bro please
+│https://instagram.com/andy_mr_lit
+└──────────────┈❖'
+              let buttons = [{ buttonId: 'command', buttonText: { displayText: '⬅️Back' }, type: 1 },{ buttonId: 'allmenu', buttonText: { displayText: '📖All Menu' }, type: 1 },{ buttonId: 'donasi', buttonText: { displayText: '🙏Donasi' }, type: 1 }]
+            await akame.sendButtonText(m.chat, buttons, anu, ntiktok, fkontak)
+            }           
             break
             case 'webzonemenu':
             case 'menuwebzone': {
