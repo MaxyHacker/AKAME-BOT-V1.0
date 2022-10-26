@@ -855,14 +855,14 @@ ${Array.from(room.jawaban, (jawaban, index) => {
         //Anti Link
         if (db.data.chats[m.chat].antilink) {
             if (budy.match(`chat.whatsapp.com`)) {
-                m.reply(`「 ANTI LINK WHATSAPP 」\n\nKamu Terdeteksi Mengirim Link Group, Maaf Kamu Akan Di Kick !`)
+                m.reply(`「 ANTI LINK WHATSAPP 」\n\n Vous êtes détecté en train d'envoyer un lien de groupe, désolé vous serez expulsé!`)
                 if (!isBotAdmins) return m.reply(`Ehh Bot Gak Admin T_T`)
                 let gclink = (`https://chat.whatsapp.com/` + await akame.groupInviteCode(m.chat))
                 let isLinkThisGc = new RegExp(gclink, 'i')
                 let isgclink = isLinkThisGc.test(m.text)
-                if (isgclink) return m.reply(`Ehh Maaf Gak Jadi, Link Group Ini Ternyata 😆`)
-                if (isAdmins) return m.reply(`Ehh Maaf Ternyata Kamu Admin 😁`)
-                if (isCreator) return m.reply(`Ehh Maaf Kamu Ownerku Ternyata 😅`)
+                if (isgclink) return m.reply(`Ehh désolé ça n'a pas marché, ce lien de groupe s'est avéré 😆`)
+                if (isAdmins) return m.reply(`Ehh Désolé vous êtes l'administrateur 😁`)
+                if (isCreator) return m.reply(`Eh désolé tu es le propriétaire apparemment😅`)
                 akame.groupParticipantsUpdate(m.chat, [m.sender], 'remove')
             }
         }
@@ -917,10 +917,10 @@ ${Array.from(room.jawaban, (jawaban, index) => {
             }
             if (!isSurrender && 1 > (ok = room.game.turn(m.sender === room.game.playerO, parseInt(m.text) - 1))) {
                 m.reply({
-                    '-3': 'Game telah berakhir',
-                    '-2': 'Invalid',
-                    '-1': 'Posisi Invalid',
-                    0: 'Posisi Invalid',
+                    '-3': 'Le jeu est terminé',
+                    '-2': 'Non valide',
+                    '-1': 'Position invalide',
+                    0: 'Position invalide',
                 } [ok])
                 return !0
             }
@@ -952,11 +952,11 @@ ${arr.slice(0, 3).join('')}
 ${arr.slice(3, 6).join('')}
 ${arr.slice(6).join('')}
 
-${isWin ? `@${winner.split('@')[0]} Menang!` : isTie ? `Game berakhir` : `Giliran ${['❌', '⭕'][1 * room.game._currentTurn]} (@${room.game.currentTurn.split('@')[0]})`}
+${isWin ? `@${winner.split('@')[0]} Gagner!` : isTie ? `Game fin` : `tour ${['❌', '⭕'][1 * room.game._currentTurn]} (@${room.game.currentTurn.split('@')[0]})`}
 ❌: @${room.game.playerX.split('@')[0]}
 ⭕: @${room.game.playerO.split('@')[0]}
 
-Ketik *nyerah* untuk menyerah dan mengakui kekalahan`
+Quand *abandonne* pour se rendre et admettre sa défaite`
             if ((room.game._currentTurn ^ isSurrender ? room.x : room.o) !== m.chat)
                 room[room.game._currentTurn ^ isSurrender ? 'x' : 'o'] = m.chat
             if (room.x !== room.o) await akame.sendText(room.x, str, fakestatus, {
@@ -975,9 +975,9 @@ Ketik *nyerah* untuk menyerah dan mengakui kekalahan`
         if (roof) {
             let win = ''
             let tie = false
-            if (m.sender == roof.p2 && /^(acc(ept)?|terima|gas|oke?|tolak|gamau|nanti|ga(k.)?bisa|y)/i.test(m.text) && m.isGroup && roof.status == 'wait') {
-                if (/^(tolak|gamau|nanti|n|ga(k.)?bisa)/i.test(m.text)) {
-                    akame.sendTextWithMentions(m.chat, `@${roof.p2.split`@`[0]} menolak suit, suit dibatalkan`, fgclink)
+            if (m.sender == roof.p2 && /^(acc(ept)?|accepte|gaz|oke?|rejeter|pas|plustard|ga(k.)?bisa|y)/i.test(m.text) && m.isGroup && roof.status == 'wait') {
+                if (/^(rejeter|pas|plustard|n|ga(k.)?bisa)/i.test(m.text)) {
+                    akame.sendTextWithMentions(m.chat, `@${roof.p2.split`@`[0]} refuser suit, suit annulé`, fgclink)
                     delete this.suit[roof.id]
                     return !0
                 }
@@ -985,22 +985,22 @@ Ketik *nyerah* untuk menyerah dan mengakui kekalahan`
                 roof.asal = m.chat
                 clearTimeout(roof.waktu)
                 //delete roof[roof.id].waktu
-                akame.sendText(m.chat, `Suit telah dikirimkan ke chat
+                akame.sendText(m.chat, `Le jeu a été envoyé en privé
 
 @${roof.p.split`@`[0]} dan 
 @${roof.p2.split`@`[0]}
 
-Silahkan pilih suit di chat masing"
+Veuillez choisir un costume dans le chat respectif"
 klik https://wa.me/${botNumber.split`@`[0]}`, fakestatus, {
                     mentions: [roof.p, roof.p2]
                 })
-                if (!roof.pilih) akame.sendText(roof.p, `Silahkan pilih \n\nBatu🗿\nKertas📄\nGunting✂️`, fgclink)
-                if (!roof.pilih2) akame.sendText(roof.p2, `Silahkan pilih \n\nBatu🗿\nKertas📄\nGunting✂️`, fgclink)
+                if (!roof.pilih) akame.sendText(roof.p, `Sil vous plaît sélectionner \n\nRoche🗿\nPapier📄\nSiceau✂️`, fgclink)
+                if (!roof.pilih2) akame.sendText(roof.p2, `Sil vous plaît sélectionner \n\nRoche🗿\nPapier📄\nSiceau✂️`, fgclink)
                 roof.waktu_milih = setTimeout(() => {
-                    if (!roof.pilih && !roof.pilih2) akame.sendText(m.chat, `Kedua pemain tidak niat main,\nSuit dibatalkan`)
+                    if (!roof.pilih && !roof.pilih2) akame.sendText(m.chat, `Les deux joueurs ont pas lintention de jouer,\nCostume annulé`)
                     else if (!roof.pilih || !roof.pilih2) {
                         win = !roof.pilih ? roof.p2 : roof.p
-                        akame.sendTextWithMentions(m.chat, `@${(roof.pilih ? roof.p2 : roof.p).split`@`[0]} tidak memilih suit, game berakhir`, fgclink)
+                        akame.sendTextWithMentions(m.chat, `@${(roof.pilih ? roof.p2 : roof.p).split`@`[0]} ne choisissez pas le costume, game over`, fgclink)
                     }
                     delete this.suit[roof.id]
                     return !0
@@ -1008,21 +1008,21 @@ klik https://wa.me/${botNumber.split`@`[0]}`, fakestatus, {
             }
             let jwb = m.sender == roof.p
             let jwb2 = m.sender == roof.p2
-            let g = /gunting/i
-            let b = /batu/i
-            let k = /kertas/i
+            let g = /siceau/i
+            let b = /roche/i
+            let k = /papier/i
             let reg = /^(gunting|batu|kertas)/i
             if (jwb && reg.test(m.text) && !roof.pilih && !m.isGroup) {
                 roof.pilih = reg.exec(m.text.toLowerCase())[0]
                 roof.text = m.text
-                m.reply(`Kamu telah memilih ${m.text} ${!roof.pilih2 ? `\n\nMenunggu lawan memilih` : ''}`)
-                if (!roof.pilih2) akame.sendText(roof.p2, '_Lawan sudah memilih_\nSekarang giliran kamu', 0)
+                m.reply(`Tu as choisi ${m.text} ${!roof.pilih2 ? `\n\nAttendre que ladversaire choisisse` : ''}`)
+                if (!roof.pilih2) akame.sendText(roof.p2, '_Ladversaire a choisi_\nMaintenant cest ton tour', 0)
             }
             if (jwb2 && reg.test(m.text) && !roof.pilih2 && !m.isGroup) {
                 roof.pilih2 = reg.exec(m.text.toLowerCase())[0]
                 roof.text2 = m.text
-                m.reply(`Kamu telah memilih ${m.text} ${!roof.pilih ? `\n\nMenunggu lawan memilih` : ''}`)
-                if (!roof.pilih) akame.sendText(roof.p, '_Lawan sudah memilih_\nSekarang giliran kamu', 0)
+                m.reply(`Tu as choisi ${m.text} ${!roof.pilih ? `\n\nAttendre que l'adversaire choisisse` : ''}`)
+                if (!roof.pilih) akame.sendText(roof.p, '_Ladversaire a choisi_\nMaintenant cest ton tour', 0)
             }
             let stage = roof.pilih
             let stage2 = roof.pilih2
@@ -1035,10 +1035,10 @@ klik https://wa.me/${botNumber.split`@`[0]}`, fakestatus, {
                 else if (k.test(stage) && b.test(stage2)) win = roof.p
                 else if (k.test(stage) && g.test(stage2)) win = roof.p2
                 else if (stage == stage2) tie = true
-                akame.sendText(roof.asal, `_*Hasil Suit*_${tie ? '\nSERI' : ''}
+                akame.sendText(roof.asal, `_*Résultats du costume*_${tie ? '\nSERI' : ''}
 
-@${roof.p.split`@`[0]} (${roof.text}) ${tie ? '' : roof.p == win ? ` Menang \n` : ` Kalah \n`}
-@${roof.p2.split`@`[0]} (${roof.text2}) ${tie ? '' : roof.p2 == win ? ` Menang \n` : ` Kalah \n`}
+@${roof.p.split`@`[0]} (${roof.text}) ${tie ? '' : roof.p == win ? ` Gagner \n` : ` Perdu \n`}
+@${roof.p2.split`@`[0]} (${roof.text2}) ${tie ? '' : roof.p2 == win ? ` Gagner \n` : ` Perdu \n`}
 `.trim(), fakestatus, {
                     mentions: [roof.p, roof.p2]
                 })
@@ -1054,16 +1054,16 @@ klik https://wa.me/${botNumber.split`@`[0]}`, fakestatus, {
             if (!afkTime || afkTime < 0) continue
             let reason = user.afkReason || ''
             m.reply(`
-Jangan tag dia!
-Dia sedang AFK ${reason ? 'dengan alasan ' + reason : 'tanpa alasan'}
-Selama ${clockString(new Date - afkTime)}
+Ne le taguez pas!
+Il est AFK ${reason ? 'avec raison ' + reason : 'sans raison'}
+Durant ${clockString(new Date - afkTime)}
 `.trim())
         }
 
         if (db.data.users[m.sender].afkTime > -1) {
             let user = global.db.data.users[m.sender]
             m.reply(`
-Kamu berhenti AFK${user.afkReason ? ' setelah ' + user.afkReason : ''}
+Vous arrêtez AFK${user.afkReason ? ' setelah ' + user.afkReason : ''}
 Selama ${clockString(new Date - user.afkTime)}
 `.trim())
             user.afkTime = -1
@@ -1083,10 +1083,10 @@ Selama ${clockString(new Date - user.afkTime)}
             case 'tictactoe': {
                 let TicTacToe = require("./lib/tictactoe")
                 this.game = this.game ? this.game : {}
-                if (Object.values(this.game).find(room => room.id.startsWith('tictactoe') && [room.game.playerX, room.game.playerO].includes(m.sender))) throw 'Kamu masih didalam game'
+                if (Object.values(this.game).find(room => room.id.startsWith('tictactoe') && [room.game.playerX, room.game.playerO].includes(m.sender))) throw 'Vous êtes toujours dans le jeu'
                 let room = Object.values(this.game).find(room => room.state === 'WAITING' && (text ? room.name === text : true))
                 if (room) {
-                    m.reply('Partner ditemukan!')
+                    m.reply('Partenaires trouvés')
                     room.o = m.chat
                     room.game.playerO = m.sender
                     room.state = 'PLAYING'
@@ -1111,9 +1111,9 @@ ${arr.slice(0, 3).join('')}
 ${arr.slice(3, 6).join('')}
 ${arr.slice(6).join('')}
 
-Menunggu @${room.game.currentTurn.split('@')[0]}
+Attendre @${room.game.currentTurn.split('@')[0]}
 
-Ketik *nyerah* untuk menyerah dan mengakui kekalahan`
+Taper *abandonner* pour abandonner et admettre sa défaite`
                     if (room.x !== room.o) await akame.sendText(room.x, str, fakestatus, {
                         mentions: parseMention(str)
                     })
@@ -1129,7 +1129,7 @@ Ketik *nyerah* untuk menyerah dan mengakui kekalahan`
                         state: 'WAITING'
                     }
                     if (text) room.name = text
-                    m.reply('Menunggu partner' + (text ? ` mengetik command dibawah ini ${prefix}${command} ${text}` : ''))
+                    m.reply('En attente de partenaire' + (text ? ` tapez la commande ci-dessous ${prefix}${command} ${text}` : ''))
                     this.game[room.id] = room
                 }
             }
@@ -1155,18 +1155,18 @@ Ketik *nyerah* untuk menyerah dan mengakui kekalahan`
                 let poin = 10
                 let poin_lose = 10
                 let timeout = 60000
-                if (Object.values(this.suit).find(roof => roof.id.startsWith('suit') && [roof.p, roof.p2].includes(m.sender))) m.reply(`Selesaikan suit mu yang sebelumnya`)
-                if (m.mentionedJid[0] === m.sender) return m.reply(`Tidak bisa bermain dengan diri sendiri !`)
-                if (!m.mentionedJid[0]) return m.reply(`_Siapa yang ingin kamu tantang?_\nTag orangnya..\n\nContoh : ${prefix}suit @${owner[1]}`, m.chat, {
+                if (Object.values(this.suit).find(roof => roof.id.startsWith('suit') && [roof.p, roof.p2].includes(m.sender))) m.reply(`Complétez votre costume précédent`)
+                if (m.mentionedJid[0] === m.sender) return m.reply(`Je ne peux pas jouer avec moi-même !`)
+                if (!m.mentionedJid[0]) return m.reply(`À propos de qui voulez-vous être?_\nTaguer la personne..\n\nExemple : ${prefix}suit @${owner[1]}`, m.chat, {
                     mentions: [owner[1] + '@s.whatsapp.net']
                 })
-                if (Object.values(this.suit).find(roof => roof.id.startsWith('suit') && [roof.p, roof.p2].includes(m.mentionedJid[0]))) throw `Orang yang kamu tantang sedang bermain suit bersama orang lain :(`
+                if (Object.values(this.suit).find(roof => roof.id.startsWith('suit') && [roof.p, roof.p2].includes(m.mentionedJid[0]))) throw `La personne que vous défiez joue avec quelqu'un d'autre :(`
                 let id = 'suit_' + new Date() * 1
                 let caption = `_*SUIT PvP*_
 
-@${m.sender.split`@`[0]} menantang @${m.mentionedJid[0].split`@`[0]} untuk bermain suit
+@${m.sender.split`@`[0]} défi @${m.mentionedJid[0].split`@`[0]} jouer au costume
 
-Silahkan @${m.mentionedJid[0].split`@`[0]} untuk ketik terima/tolak`
+S'il vous plaît @${m.mentionedJid[0].split`@`[0]} taper accepte/rejeter`
                 this.suit[id] = {
                     chat: await akame.sendText(m.chat, caption, fakestatus, {
                         mentions: parseMention(caption)
@@ -1176,7 +1176,7 @@ Silahkan @${m.mentionedJid[0].split`@`[0]} untuk ketik terima/tolak`
                     p2: m.mentionedJid[0],
                     status: 'wait',
                     waktu: setTimeout(() => {
-                        if (this.suit[id]) akame.sendText(m.chat, `_Waktu suit habis_`, fgclink)
+                        if (this.suit[id]) akame.sendText(m.chat, `_Temps mort de costume_`, fgclink)
                         delete this.suit[id]
                     }, 60000),
                     poin,
@@ -5105,7 +5105,7 @@ Lihat list Pesan Dengan ${prefix}listmsg`)
             	if (!text) throw `Example : ${prefix + command} Fitur Min`
                let ownernya = ownernomer + '@s.whatsapp.net'
                let me = m.sender
-               let pjtxt = `Pesan Dari : @${me.split('@')[0]} \nUntuk : @${ownernya.split('@')[0]}\n\n${command} ${text}`
+               let pjtxt = `Message de : @${me.split('@')[0]} \n Pour : @${ownernya.split('@')[0]}\n\n${command} ${text}`
                let ments = [ownernya, me]
                let buttons = [{ buttonId: 'hehehe', buttonText: { displayText: '🙏THANKS' }, type: 1 }]
             await akame.sendButtonText(ownernya, buttons, pjtxt, ntiktok, m, {mentions: ments, quoted: fdoc})
