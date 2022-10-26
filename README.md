@@ -32,11 +32,6 @@
  
 ## 🙂➾ [Then Deploy The Bot From Here](https://heroku.com/deploy)
 
-
-<p align="center">
-
-<img src="https://i.ibb.co/6tCrPD6/image-downloader-1654443961039.gif" alt="nz" width="350"/>
-
 >If you using mod whatsapp!
 >DO NOT USE FOUD MODS.
 
