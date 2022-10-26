@@ -6,7 +6,7 @@
 
 ## AKAME╺-𝗕𝗢𝗧࿐   Version 1.0
 
-## [![Typing SVG](https://readme-typing-svg.herokuapp.com?font=Rockstar-ExtraBold&color=F33A6A&lines=𝐖𝐞𝐥𝐜𝐨𝐦𝐞+𝐓𝐨+AKAME╺+BOT.;𝙿𝙾𝚆𝙴𝚁𝙳+𝙱𝚈:+MR+LIT+𝚃𝙴𝙰𝙼;ℂ𝕣𝕖𝕒𝕥𝕖𝕕+𝕓𝕪:+ANDYMRLIT;𝐌𝐑:+MAXI;💕HAITIAN+HACKER🙃;😁MAP REMESYEW DESKE OU UTILIZE BOT LA🌹)](https://git.io/typing-svg)
+## [![Typing SVG](https://readme-typing-svg.herokuapp.com?font=Rockstar-ExtraBold&color=F33A6A&lines=𝐖𝐞𝐥𝐜𝐨𝐦𝐞+𝐓𝐨+AKAME╺+BOT.;𝙿𝙾𝚆𝙴𝚁𝙳+𝙱𝚈:+MR+LIT+𝚃𝙴𝙰𝙼;ℂ𝕣𝕖𝕒𝕥𝕖𝕕+𝕓𝕪:+ANDYMRLIT;𝐌𝐑:+MAXI;💕HAITIAN+HACKER🙃;😁Thank you bro🌹)](https://git.io/typing-svg)
 
  VERSION (2022-10-25) ([Whatsapp can't see messages]) [Fixed ]
 
