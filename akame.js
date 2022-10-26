@@ -1011,7 +1011,7 @@ klik https://wa.me/${botNumber.split`@`[0]}`, fakestatus, {
             let g = /siceau/i
             let b = /roche/i
             let k = /papier/i
-            let reg = /^(gunting|batu|kertas)/i
+            let reg = /^(siceau|roche|papier)/i
             if (jwb && reg.test(m.text) && !roof.pilih && !m.isGroup) {
                 roof.pilih = reg.exec(m.text.toLowerCase())[0]
                 roof.text = m.text
