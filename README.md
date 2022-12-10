@@ -31,6 +31,8 @@
 ## 🙂➾ [Fork This Repo By Clicking Here](https://github.com/MaxyOfc/AKAME-BOT-V1.0/fork)
  
 ## 🙂➾ [Then Deploy The Bot From Here](https://heroku.com/deploy)
+## 🌚➾ [Then Deploy The bot From HERE](https://repl.it/badge/github/MaxyHacker/AKAME-BOT-V1.0)](https://repl.it/github/MaxyHacker/AKAME-BOT-V1.0)
+## TERMUX USER
 
 >If you using mod whatsapp!
 >DO NOT USE FOUD MODS.
