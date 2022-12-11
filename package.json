@@ -1,7 +1,7 @@
 {
-  "name": "Sparkybot-Md",
+  "name": "ANDY MD",
   "version": "1.6.3",
-  "description": "SparkyBot, Only update in YouTube",
+  "description": "AndybotMd, Only update in YouTube",
   "main": "index.js",
   "license": "MIT",
   "scripts": {
@@ -14,7 +14,7 @@
     "base",
     "baileys-md"
   ],
-  "author": "Sparky",
+  "author": "MAXII",
   "license": "MIT",
   "dependencies": {
     "@adiwajshing/baileys": "^4.4.0",
